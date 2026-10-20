@@ -27,7 +27,6 @@ $router->get('/', [DashboardController::class, 'index']);
 $router->get('/login', [AuthController::class, 'showLogin']);
 $router->post('/login', [AuthController::class, 'login']);
 $router->get('/logout', [AuthController::class, 'logout']);
-
 $router->get('/dashboard', [DashboardController::class, 'index']);
 
 $router->get('/computers', [ComputerController::class, 'index']);
@@ -43,6 +42,18 @@ $router->post('/customers/store', [CustomerController::class, 'store']);
 $router->get('/customers/edit', [CustomerController::class, 'edit']);
 $router->post('/customers/update', [CustomerController::class, 'update']);
 $router->post('/customers/delete', [CustomerController::class, 'delete']);
+
+$router->get('/accounts', [AccountController::class, 'index']);
+$router->get('/accounts/create', [AccountController::class, 'create']);
+$router->post('/accounts/store', [AccountController::class, 'store']);
+
+$router->get('/combos', [ComboController::class, 'index']);
+$router->post('/combos/toggle', [ComboController::class, 'toggle']);
+
+$router->get('/wallet', [WalletController::class, 'index']);
+$router->post('/wallet/topup', [WalletController::class, 'topup']);
+$router->post('/wallet/buy-combo', [WalletController::class, 'buyCombo']);
+$router->get('/transactions', [WalletController::class, 'transactions']);
 
 $router->get('/sessions', [SessionController::class, 'index']);
 $router->get('/sessions/open', [SessionController::class, 'open']);

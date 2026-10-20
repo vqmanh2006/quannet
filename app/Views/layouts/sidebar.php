@@ -12,7 +12,11 @@
         <nav class="nav flex-column gap-2">
             <a class="nav-link text-white p-0" href="<?= htmlspecialchars(BASE_URL . '/dashboard') ?>">Dashboard</a>
             <a class="nav-link text-white p-0" href="<?= htmlspecialchars(BASE_URL . '/computers') ?>">Máy trạm</a>
-            <a class="nav-link text-white p-0" href="<?= htmlspecialchars(BASE_URL . '/customers') ?>">Khách hàng</a>
+            <a class="nav-link text-white p-0" href="<?= htmlspecialchars(BASE_URL . '/accounts') ?>">Tài khoản khách</a>
+            <a class="nav-link text-white p-0" href="<?= htmlspecialchars(BASE_URL . '/combos') ?>">Combo</a>
+            <a class="nav-link text-white p-0" href="<?= htmlspecialchars(BASE_URL . '/wallet') ?>">Nạp tiền / Bán combo</a>
+            <a class="nav-link text-white p-0" href="<?= htmlspecialchars(BASE_URL . '/transactions') ?>">Giao dịch</a>
+            <a class="nav-link text-white p-0" href="<?= htmlspecialchars(BASE_URL . '/customers') ?>">Khách hàng cũ</a>
             <a class="nav-link text-white p-0" href="<?= htmlspecialchars(BASE_URL . '/sessions') ?>">Phiên chơi</a>
             <a class="nav-link text-warning p-0" href="<?= htmlspecialchars(BASE_URL . '/logout') ?>">Đăng xuất</a>
         </nav>
